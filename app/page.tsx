@@ -1,5 +1,6 @@
 import Silk from "../components/Silk";
 import ScrollVelocity from "../components/ScrollVelocity";
+import CircularGallery from "../components/CircularGallery";
 
 export default function Home() {
   return (
@@ -28,15 +29,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12">
+      <section className="py-12 bg-black">
         <ScrollVelocity
           texts={["React Bits", "Scroll Down"]}
           velocity={100}
-          className="custom-scroll-text"
+          className="custom-scro+++ll-text"
           numCopies={6}
           damping={50}
           stiffness={400}
         />
+      </section>
+
+      <section className="bg-black px-4 pb-12">
+        <div className="relative h-[600px] w-full">
+          <CircularGallery
+            bend={1}
+            textColor="#ffffff"
+            borderRadius={0.05}
+            scrollSpeed={2}
+            scrollEase={0.05}
+          />
+        </div>
       </section>
     </main>
   );

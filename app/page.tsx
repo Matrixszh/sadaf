@@ -1,11 +1,14 @@
 import Silk from "../components/Silk";
 import ScrollVelocity from "../components/ScrollVelocity";
 import CircularGallery from "../components/CircularGallery";
+import { NavbarDemo } from "../components/NavbarDemo";
 
 export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">
-      <section className="relative min-h-screen w-full overflow-hidden">
+      <NavbarDemo />
+
+      <section id="features" className="relative min-h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <Silk
             speed={5}
@@ -29,18 +32,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 bg-black">
+      <section id="pricing" className="py-12 bg-black">
         <ScrollVelocity
           texts={["React Bits", "Scroll Down"]}
           velocity={100}
-          className="custom-scro+++ll-text"
+          className="custom-scroll-text"
           numCopies={6}
           damping={50}
           stiffness={400}
         />
       </section>
 
-      <section className="bg-black px-4 pb-12">
+      <section id="contact" className="bg-black px-4 pb-12">
         <div className="relative h-[600px] w-full">
           <CircularGallery
             bend={1}

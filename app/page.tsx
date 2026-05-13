@@ -2,6 +2,8 @@ import Silk from "../components/Silk";
 import ScrollVelocity from "../components/ScrollVelocity";
 import CircularGallery from "../components/CircularGallery";
 import { NavbarDemo } from "../components/NavbarDemo";
+import ScrollFloat from "@/components/ScrollFloat";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default function Home() {
   return (
@@ -54,6 +56,37 @@ export default function Home() {
           />
         </div>
       </section>
+      <section id="contact" className="bg-black px-4 h-[200vh]">
+        <div className="relative pt-24 text-center">
+          <div className="relative z-20">
+            <ScrollFloat
+              animationDuration={1}
+              ease="back.inOut(2)"
+              scrollStart="center bottom+=50%"
+              scrollEnd="bottom bottom-=40%"
+              stagger={0.03}
+              textClassName="text-white drop-shadow"
+            >
+              React Bits
+            </ScrollFloat>
+          </div>
+
+          <div className="relative z-10 mt-10 text-white">
+            <ScrollReveal
+              baseOpacity={0.1}
+              enableBlur
+              baseRotation={3}
+              blurStrength={4}
+              textClassName="text-white"
+            >
+              When does a man die? When he is hit by a bullet? No! When he suffers a disease?
+              No! When he ate a soup made out of a poisonous mushroom?
+              No! A man dies when he is forgotten!
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+      
     </main>
   );
 }

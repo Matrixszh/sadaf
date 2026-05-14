@@ -1,9 +1,11 @@
+import Image from "next/image";
 import Silk from "../components/Silk";
 import ScrollVelocity from "../components/ScrollVelocity";
 import CircularGallery from "../components/CircularGallery";
 import { NavbarDemo } from "../components/NavbarDemo";
 import ScrollFloat from "@/components/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal";
+import ImageCarousel from "@/components/ImageCarousel";
 
 export default function Home() {
   return (
@@ -34,18 +36,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="pricing" className="py-12 bg-black">
-        <ScrollVelocity
-          texts={["React Bits", "Scroll Down"]}
-          velocity={100}
-          className="custom-scroll-text"
-          numCopies={6}
-          damping={50}
-          stiffness={400}
-        />
-      </section>
 
-      <section id="contact" className="bg-black px-4 pb-12">
+      <section id="gallery" className="bg-black px-4 pb-12">
         <div className="relative h-[600px] w-full">
           <CircularGallery
             bend={1}
@@ -56,7 +48,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="contact" className="bg-black px-4 h-[200vh]">
+      <section id="contact" className="bg-black px-4 h-[100vh] pb-[20px]">
         <div className="relative pt-24 text-center">
           <div className="relative z-20">
             <ScrollFloat
@@ -81,8 +73,43 @@ export default function Home() {
             >
               When does a man die? When he is hit by a bullet? No! When he suffers a disease?
               No! When he ate a soup made out of a poisonous mushroom?
+              No! A man dies when he is forgotten!When does a man die? When he is hit by a bullet? No! When he suffers a disease?
+              No! When he ate a soup made out of a poisonous mushroom?
+              No! A man dies when he is forgotten!When does a man die? When he is hit by a bullet? No! When he suffers a disease?
+              No! When he ate a soup made out of a poisonous mushroom?
               No! A man dies when he is forgotten!
             </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-black px-6 py-20 overflow-hidden">
+        <Image
+          src="/flower1.png"
+          alt="Flower decoration 1"
+          width={360}
+          height={360}
+          className="pt-15 pointer-events-none absolute -left-10 -top-16 z-0 w-40 rotate-[-15deg] opacity-90 md:w-56"
+          priority={false}
+        />
+        <Image
+          src="/flower2.png"
+          alt="Flower decoration 2"
+          width={360}
+          height={360}
+          className="pb-15 pointer-events-none absolute -bottom-16 -right-10 z-0 w-40 rotate-[15deg] opacity-90 md:w-56"
+          priority={false}
+        />
+
+        <div className="relative z-10 mx-auto w-full max-w-5xl">
+          <h2 className="text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+            Featured Work
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-center text-white/70">
+            Swipe on mobile or use arrows to explore.
+          </p>
+          <div className="mt-10">
+            <ImageCarousel />
           </div>
         </div>
       </section>

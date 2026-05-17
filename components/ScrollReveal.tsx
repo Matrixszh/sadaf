@@ -110,8 +110,8 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
   }, [scrollContainerRef, enableBlur, baseRotation, baseOpacity, rotationEnd, wordAnimationEnd, blurStrength]);
 
   return (
-    <h2 ref={containerRef} className={`my-5 ${containerClassName}`}>
-      <p className={`text-[clamp(0.8rem,4vw,1.6rem)] text-justify justify-center leading-[1.5] px-40 font-light ${textClassName}`}>{splitText}</p>
+    <h2 ref={containerRef} clas Name={`my-5 ${containerClassName}`}>
+      <p className={`text-[clamp(0.8rem,4vw,1.6rem)] text-justify justify-center leading-[1.5] px-5 md:px-40 font-light ${textClassName}`}>{splitText}</p>
     </h2>
   );
 };

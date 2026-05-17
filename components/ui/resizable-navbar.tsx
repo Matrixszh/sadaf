@@ -4,8 +4,6 @@ import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
   motion,
   AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
 } from "motion/react";
 
 import React, { useEffect, useState } from "react";
@@ -50,12 +48,7 @@ interface MobileNavMenuProps {
 }
 
 export const Navbar = ({ children, className }: NavbarProps) => {
-  const { scrollY } = useScroll();
   const [visible, setVisible] = useState<boolean>(false);
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    setVisible(latest > 100);
-  });
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 100);
@@ -65,7 +58,12 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   }, []);
 
   return (
-    <div className={cn("fixed inset-x-0 top-0 z-50 w-full", className)}>
+    <div
+      className={cn(
+        "absolute inset-x-0 top-0 z-50 w-full",
+        className,
+      )}
+    >
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(

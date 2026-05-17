@@ -50,7 +50,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="contact" className="bg-black px-4 h-[100vh] pb-[20px]">
+      <section id="contact" className="bg-black px-4 h-[100vh] pb-[60px]">
         <div className="relative pt-24 text-center">
           <div className="relative z-20">
             <ScrollFloat
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-black px-6 py-20 overflow-hidden">
+      <section className="relative bg-black px-6 py-5 overflow-hidden">
         <Image
           src="/flower1.png"
           alt="Flower decoration 1"
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative bg-black pt-[22vh]">
+      <section className="relative bg-black pt-[5vh]">
         <div className="relative h-[420px] w-full sm:h-[520px]">
           <MagicRings
             color="#EC4899"

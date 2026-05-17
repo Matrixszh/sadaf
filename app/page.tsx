@@ -6,6 +6,8 @@ import { NavbarDemo } from "../components/NavbarDemo";
 import ScrollFloat from "@/components/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal";
 import ImageCarousel from "@/components/ImageCarousel";
+import MagicRings from "@/components/MagicRings";
+import CountUp from "@/components/CountUp";
 
 export default function Home() {
   return (
@@ -110,6 +112,97 @@ export default function Home() {
           </p>
           <div className="mt-10">
             <ImageCarousel />
+          </div>
+        </div>
+      </section>
+
+      <section className="relative bg-black pt-[22vh]">
+        <div className="relative h-[420px] w-full sm:h-[520px]">
+          <MagicRings
+            color="#EC4899"
+            colorTwo="#EC4899"
+            ringCount={6}
+            speed={1}
+            attenuation={10}
+            lineThickness={2}
+            baseRadius={0.35}
+            radiusStep={0.1}
+            scaleRate={0.1}
+            opacity={1}
+            blur={0}
+            noiseAmount={0.1}
+            rotation={0}
+            ringGap={1.5}
+            fadeIn={0.7}
+            fadeOut={0.5}
+            followMouse={false}
+            mouseInfluence={0.2}
+            hoverScale={1.2}
+            parallax={0.05}
+            clickBurst={false}
+          />
+
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6">
+            <h2 className="text-center text-4xl font-light tracking-tight text-white drop-shadow sm:text-6xl">
+              9 MONTHS
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-black px-6 py-20">
+        <div className="mx-auto w-full max-w-6xl">
+          <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-3">
+            <div className="rounded-2xl  px-8 py-10">
+              <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+                <CountUp
+                  from={0}
+                  to={270}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="count-up-text"
+                  delay={0}
+                />
+              </div>
+              <div className="mt-3 text-sm font-medium uppercase tracking-widest text-white/60">
+                Days
+              </div>
+            </div>
+
+            <div className="rounded-2xl px-8 py-10">
+              <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+                <CountUp
+                  from={0}
+                  to={6480}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="count-up-text"
+                  delay={0.1}
+                />
+              </div>
+              <div className="mt-3 text-sm font-medium uppercase tracking-widest text-white/60">
+                Hours
+              </div>
+            </div>
+
+            <div className="rounded-2xl  px-8 py-10">
+              <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
+                <CountUp
+                  from={0}
+                  to={388800}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="count-up-text"
+                  delay={0.2}
+                />
+              </div>
+              <div className="mt-3 text-sm font-medium uppercase tracking-widest text-white/60">
+                Minutes
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -8,7 +8,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 interface NavbarProps {
@@ -56,6 +56,13 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   useMotionValueEvent(scrollY, "change", (latest) => {
     setVisible(latest > 100);
   });
+
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 100);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <div className={cn("fixed inset-x-0 top-0 z-50 w-full", className)}>

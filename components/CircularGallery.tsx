@@ -480,52 +480,52 @@ class App {
   ) {
     const defaultItems = [
       {
-        image: `https://picsum.photos/seed/1/800/600?grayscale`,
-        text: 'Bridge'
+        image: `/1stdate.jpeg`,
+        text: 'The Start'
       },
       {
-        image: `https://picsum.photos/seed/2/800/600?grayscale`,
-        text: 'Desk Setup'
+        image: `/proposal.jpeg`,
+        text: 'Proposal'
       },
       {
-        image: `https://picsum.photos/seed/3/800/600?grayscale`,
-        text: 'Waterfall'
+        image: `/banana.jpeg`,
+        text: 'Art'
       },
       {
-        image: `https://picsum.photos/seed/4/800/600?grayscale`,
-        text: 'Strawberries'
+        image: `/eid.jpeg`,
+        text: 'Meri Eidi'
       },
       {
-        image: `https://picsum.photos/seed/5/800/600?grayscale`,
-        text: 'Deep Diving'
+        image: `/aromale.jpeg`,
+        text: 'Devine'
       },
       {
-        image: `https://picsum.photos/seed/16/800/600?grayscale`,
-        text: 'Train Track'
+        image: `/farewell.jpeg`,
+        text: 'Glamorous'
       },
       {
-        image: `https://picsum.photos/seed/17/800/600?grayscale`,
-        text: 'Santorini'
+        image: `/hibachi.jpeg`,
+        text: 'Flowers Fade In Your Presence'
       },
       {
-        image: `https://picsum.photos/seed/8/800/600?grayscale`,
-        text: 'Blurry Lights'
+        image: `/idp.jpeg`,
+        text: 'Surprise'
       },
       {
-        image: `https://picsum.photos/seed/9/800/600?grayscale`,
-        text: 'New York'
+        image: `/katha.jpeg`,
+        text: 'Chic'
       },
       {
-        image: `https://picsum.photos/seed/10/800/600?grayscale`,
-        text: 'Good Boy'
+        image: `/redhoodie.jpeg`,
+        text: 'Smol Bunny'
       },
       {
-        image: `https://picsum.photos/seed/21/800/600?grayscale`,
-        text: 'Coastline'
+        image: `/valentine.jpeg`,
+        text: 'Dreamy Dreamy'
       },
       {
-        image: `https://picsum.photos/seed/12/800/600?grayscale`,
-        text: 'Palm Trees'
+        image: `/wings.jpeg`,
+        text: 'Blissful Evening'
       }
     ];
     const galleryItems = items && items.length ? items : defaultItems;

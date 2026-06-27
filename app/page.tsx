@@ -8,6 +8,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import ImageCarousel from "@/components/ImageCarousel";
 import MagicRings from "@/components/MagicRings";
 import CountUp from "@/components/CountUp";
+import EmailContactForm from "@/components/EmailContactForm";
 
 export default function Home() {
   return (
@@ -28,11 +29,12 @@ export default function Home() {
         <div className="relative z-10 flex min-h-screen items-center justify-center px-6">
           <div className="max-w-3xl text-center text-white">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-6xl">
-              Modern digital experiences that feel smooth and premium.
+              Happy 24th Birthday, Sadaf.
             </h1>
             <p className="mt-6 text-base text-white/80 sm:text-lg">
-              Built with performance in mind, designed to stand out, and crafted
-              for your brand.
+              This little corner of the internet is made just for you, to
+              celebrate your smile, your kindness, and the beautiful way you
+              make my world feel softer every single day.
             </p>
           </div>
         </div>
@@ -61,7 +63,7 @@ export default function Home() {
               stagger={0.03}
               textClassName="text-white drop-shadow"
             >
-              React Bits
+              For Sadaf
             </ScrollFloat>
           </div>
 
@@ -73,13 +75,12 @@ export default function Home() {
               blurStrength={4}
               textClassName="text-white"
             >
-              When does a man die? When he is hit by a bullet? No! When he suffers a disease?
-              No! When he ate a soup made out of a poisonous mushroom?
-              No! A man dies when he is forgotten!When does a man die? When he is hit by a bullet? No! When he suffers a disease?
-              No! When he ate a soup made out of a poisonous mushroom?
-              No! A man dies when he is forgotten!When does a man die? When he is hit by a bullet? No! When he suffers a disease?
-              No! When he ate a soup made out of a poisonous mushroom?
-              No! A man dies when he is forgotten!
+              Sadaf, on your 24th birthday I just want you to know how deeply
+              loved you are. Your laugh is my favorite sound, your presence is
+              my favorite comfort, and every memory with you becomes something I
+              want to keep forever. This whole website is just one small way of
+              saying thank you for being you, and for making life feel so much
+              more beautiful.
             </ScrollReveal>
           </div>
         </div>
@@ -105,10 +106,11 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto w-full max-w-5xl">
           <h2 className="text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Featured Work
+            Moments Of You
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-white/70">
-            Swipe on mobile or use arrows to explore.
+            Swipe through a few little frames made for the girl who just turned
+            24.
           </p>
           <div className="mt-10">
             <ImageCarousel />
@@ -144,7 +146,7 @@ export default function Home() {
 
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6">
             <h2 className="text-center text-4xl font-light tracking-tight text-white drop-shadow sm:text-6xl">
-              9 MONTHS
+              Sadaf's Sweet 24
             </h2>
           </div>
         </div>
@@ -152,12 +154,15 @@ export default function Home() {
 
       <section className="bg-black px-6 py-20">
         <div className="mx-auto w-full max-w-6xl">
+          <p className="mb-10 text-center text-lg text-white/70 sm:text-xl">
+            Every second of celebrating you feels special.
+          </p>
           <div className="grid grid-cols-1 gap-10 text-center sm:grid-cols-3">
             <div className="rounded-2xl  px-8 py-10">
               <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
                 <CountUp
                   from={0}
-                  to={270}
+                  to={8760}
                   separator=","
                   direction="up"
                   duration={1}
@@ -174,7 +179,7 @@ export default function Home() {
               <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
                 <CountUp
                   from={0}
-                  to={6480}
+                  to={288}
                   separator=","
                   direction="up"
                   duration={1}
@@ -183,7 +188,7 @@ export default function Home() {
                 />
               </div>
               <div className="mt-3 text-sm font-medium uppercase tracking-widest text-white/60">
-                Hours
+                Months
               </div>
             </div>
 
@@ -191,7 +196,7 @@ export default function Home() {
               <div className="text-5xl font-semibold tracking-tight text-white sm:text-6xl">
                 <CountUp
                   from={0}
-                  to={388800}
+                  to={25}
                   separator=","
                   direction="up"
                   duration={1}
@@ -200,10 +205,26 @@ export default function Home() {
                 />
               </div>
               <div className="mt-3 text-sm font-medium uppercase tracking-widest text-white/60">
-                Minutes
+                June
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="message" className="bg-black px-6 py-20">
+        <div className="mx-auto w-full max-w-5xl text-center">
+          <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            Leave A Little Note
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-white/70 sm:text-lg">
+            If you want, you can send one sweet message here and it will arrive
+            through EmailJS.
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <EmailContactForm />
         </div>
       </section>
       

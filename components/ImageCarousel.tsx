@@ -14,10 +14,12 @@ interface ImageCarouselProps {
 }
 
 const defaultSlides: Slide[] = [
-  { src: "/pexels-shamshir-lall-125804305-37117091-removebg-preview.png", alt: "Carousel slide 1" },
-  { src: "/flower1.png", alt: "Carousel slide 2" },
-  { src: "/globe.svg", alt: "Carousel slide 3" },
-  { src: "/window.svg", alt: "Carousel slide 4" },
+  { src: "/gussa_gussa.jpeg", alt: "Carousel slide 1" },
+  { src: "/face_mask.jpeg", alt: "GUSSA GUSSA" },
+  { src: "/inorbit.jpeg", alt: "Carousel slide 4" },
+    { src: "/humarekhadam.jpeg", alt: "GUSSA GUSSA" },
+  { src: "/valentinesus.jpeg", alt: "Carousel slide 3" },
+  { src: "/tansen.jpeg", alt: "Carousel slide 4" },
 ];
 
 export default function ImageCarousel({ slides, className }: ImageCarouselProps) {

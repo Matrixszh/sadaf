@@ -75,24 +75,19 @@ export default function Home() {
               blurStrength={4}
               textClassName="text-white"
             >
-              Sadaf, on your 24th birthday I just want you to know how deeply
-              loved you are. Your laugh is my favorite sound, your presence is
-              my favorite comfort, and every memory with you becomes something I
-              want to keep forever. This whole website is just one small way of
-              saying thank you for being you, and for making life feel so much
-              more beautiful.
+              This Comes late , yet it has come to you as a gift that was meant to be for your birthday , I have never loved anyone before you and I don't think I ever knew loving before you . Sadaf "A Mother Pearl" just like a pearl is held within a warm emabrce you hold my heart with divinity I never imagined existed . Sadaf I cannot love you enough and that is my misfortune that all the time in this world is not for you and me and how much ever time I had with you I tried to squeeze every second of it living with you like it was last day .... and here it is , the last days are upon us . 25th June a day that marks the happiest day in my life a star was born you shine brighter than anyhting and warmer than my own skin . you are the embodiment of pretty , caring , Glamorous , hot etc . Adjectives aren't of any justice to you . My special Someone my lovely little Sadaf this is your place to remember me , this is made so that no matter where in the world you are ; you can see that there is a person that loves you more than anything and everything . This is your celebration my love . I hope My love to you is felt as much as it is meant by me .
             </ScrollReveal>
           </div>
         </div>
       </section>
 
-      <section className="relative bg-black px-6 py-5 overflow-hidden">
+      <section className="relative bg-black px-6 py-[25vh] overflow-hidden">
         <Image
           src="/flower1.png"
           alt="Flower decoration 1"
           width={360}
           height={360}
-          className="pt-15 pointer-events-none absolute -left-10 -top-16 z-0 w-40 rotate-[-15deg] opacity-90 md:w-56"
+          className="pt-[25vh] pointer-events-none absolute -left-10 -top-16 z-0 w-40 rotate-[-15deg] opacity-90 md:w-56"
           priority={false}
         />
         <Image
@@ -109,8 +104,7 @@ export default function Home() {
             Moments Of You
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-white/70">
-            Swipe through a few little frames made for the girl who just turned
-            24.
+            Swipe through a few little frames made for us.
           </p>
           <div className="mt-10">
             <ImageCarousel />
@@ -218,8 +212,7 @@ export default function Home() {
             Leave A Little Note
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-white/70 sm:text-lg">
-            If you want, you can send one sweet message here and it will arrive
-            through EmailJS.
+            If you want, you can send sweet messages here .
           </p>
         </div>
 

@@ -3,6 +3,7 @@ import { Dancing_Script, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import IntroReveal from "@/components/IntroReveal";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
       className={cn("h-full", "antialiased", "font-sans", dancingScript.variable, geistSans.variable, geistMono.variable)}
     >
       <body className="min-h-full flex flex-col font-medium">
+        <BackgroundMusic />
         <IntroReveal>
           <div className="min-h-full flex flex-col">
             <main className="flex-1">{children}</main>

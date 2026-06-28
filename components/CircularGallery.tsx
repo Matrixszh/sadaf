@@ -519,9 +519,27 @@ class App {
         image: `/redhoodie.jpeg`,
         text: 'Smol Bunny'
       },
+      
+      {
+        image: `/minisadaf.jpeg`,
+        text: 'Smol Bunny'
+      },
       {
         image: `/valentine.jpeg`,
         text: 'Dreamy Dreamy'
+      },
+      {
+        image: `/iftar.jpeg`,
+        text: 'meri thandak'
+      },
+      {
+        image: `/airport.jpeg`,
+        text: 'Happiness Returns'
+      },
+      
+      {
+        image: `/ghar.jpeg`,
+        text: 'Sleeping Beauty'
       },
       {
         image: `/wings.jpeg`,
